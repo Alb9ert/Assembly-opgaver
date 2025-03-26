@@ -1,11 +1,8 @@
-.data
-truePrint: .asciiz "true"
-falsePrint: .asciiz "false"
 
 .text
 .globl main
 main:
-    if 3 <> 4 then 10 * 2 else 14
+    # if 3 <> 4 then 10 * 2 else 14
     li $a1, 3
     li $a2, 4
 
