@@ -25,7 +25,7 @@ main:
     li $a0, 10          # ASCII code for newline
     li $v0, 11          # System call for print_char
     syscall             # Print newline
-
+    
     # Part 2: let x = 3 in (let y = x + x in x * y) + (let z = x + 3 in z / z)
     li $t0, 3           # x = 3
     sub $sp, $sp, 4     # Allocate space for x on the stack
